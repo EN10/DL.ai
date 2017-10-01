@@ -69,17 +69,21 @@ def propagate(w, b, X, Y):
     dw -- gradient of the loss with respect to w, thus same shape as w
     db -- gradient of the loss with respect to b, thus same shape as b
     
+    Tips:
+    - Write your code step by step for the propagation. np.log(), np.dot()
     """
     
     m = X.shape[1]
     
-    # FORWARD PROPAGATION (FROM X TO COST)
-    A = sigmoid(np.dot(w.T,X)+b)                            # compute activation
-    cost = -1/m*np.sum(Y*np.log(A)+(1-Y)*np.log(1-A))       # compute cost
+    ### START CODE HERE ### (~ 2 lines of code)
+    A = sigmoid(np.dot(w.T,X)+b)                        # compute activation
+    cost = -1/m*np.sum(Y*np.log(A)+(1-Y)*np.log(1-A))   # compute cost
     
     # BACKWARD PROPAGATION (TO FIND GRAD)
+    ### START CODE HERE ### (~ 2 lines of code)
     dw = 1/m * np.dot(X,(A-Y).T)
     db = 1/m * np.sum(A-Y)
+    ### END CODE HERE ###
 
     assert(dw.shape == w.shape)
     assert(db.dtype == float)
@@ -119,14 +123,14 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
     
     for i in range(num_iterations):
         
-        # Cost and gradient calculation (≈ 1-4 lines of code)
+        # Cost and gradient calculation (~ 1-4 lines of code)
         grads, cost = propagate(w, b, X, Y)
         
         # Retrieve derivatives from grads
         dw = grads["dw"]
         db = grads["db"]
         
-        # update rule (≈ 2 lines of code)
+        # update rule (~ 2 lines of code)
         w = w - learning_rate * dw
         b = b - learning_rate * db
         
@@ -195,17 +199,17 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
     d -- dictionary containing information about the model.
     """
     
-    # initialize parameters with zeros (≈ 1 line of code)
+    # initialize parameters with zeros (~ 1 line of code)
     w, b = initialize_with_zeros(X_train.shape[0])
     
-    # Gradient descent (≈ 1 line of code)
+    # Gradient descent (~ 1 line of code)
     parameters, grads, costs = optimize(w, b, X_train, Y_train, num_iterations, learning_rate, print_cost)
     
     # Retrieve parameters w and b from dictionary "parameters"
     w = parameters["w"]
     b = parameters["b"]
     
-    # Predict test/train set examples (≈ 2 lines of code)
+    # Predict test/train set examples (~ 2 lines of code)
     Y_prediction_test = predict(w, b, X_test)
     Y_prediction_train = predict(w, b, X_train)
 
@@ -223,3 +227,13 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
          "num_iterations": num_iterations}
     
     return d
+    
+if __name__ == '__main__':
+    
+    w, b, X, Y = np.array([[1.],[2.]]), 2., np.array([[1.,2.,-1.],[3.,4.,-3.2]]), np.array([[1,0,1]])
+    grads, cost = propagate(w, b, X, Y)
+    print ("dw = " + str(grads["dw"]))
+    print ("db = " + str(grads["db"]))
+    print ("cost = " + str(cost))
+    
+    #d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 2000, learning_rate = 0.005, print_cost = True)
