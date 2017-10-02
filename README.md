@@ -20,5 +20,6 @@ Run:
 
     sudo apt update
     sudo apt install python-pip
+    
     pip install --upgrade pip
     sudo pip install numpy h5py
