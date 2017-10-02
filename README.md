@@ -15,3 +15,10 @@ Install:
 Run:
 
     jupyter notebook --ip=0.0.0.0 --port=8080 --no-browser
+
+### Prerequisites:
+
+    sudo apt update
+    sudo apt install python-pip
+    pip install --upgrade pip
+    sudo pip install numpy h5py
