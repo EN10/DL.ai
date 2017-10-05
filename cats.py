@@ -189,10 +189,4 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
     
 if __name__ == '__main__':
     
-    w, b, X, Y = np.array([[1.],[2.]]), 2., np.array([[1.,2.,-1.],[3.,4.,-3.2]]), np.array([[1,0,1]])
-    grads, cost = propagate(w, b, X, Y)
-    print ("dw = " + str(grads["dw"]))
-    print ("db = " + str(grads["db"]))
-    print ("cost = " + str(cost))
-    
-    #d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 2000, learning_rate = 0.005, print_cost = True)
+    d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 2000, learning_rate = 0.005, print_cost = True)
