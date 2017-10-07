@@ -1,8 +1,10 @@
-# Logistic Regression with a Neural Network mindset
+# Neural Networks and Deep Learning
 
+**Logistic Regression with a Neural Network**  
 cats.py - Image recognition algorithm that recognizes cats with 70% accuracy!
 
-Based on Neural Networks and Deep Learning by deeplearning.ai
+**Planar data classification with a hidden layer**  
+flowers.py - neural network to correctly classify red and blue generated points that form a flower
 
 ### Jupyter
 
