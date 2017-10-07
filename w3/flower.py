@@ -1,13 +1,8 @@
 # Package imports
+from __future__ import division
 import numpy as np
-from testCases_v2 import *
-import sklearn
-import sklearn.datasets
-import sklearn.linear_model
-from planar_utils import plot_decision_boundary, sigmoid, load_planar_dataset, load_extra_datasets
 
-np.random.seed(1) # set a seed so that the results are consistent
-
+from planar_utils import sigmoid, load_planar_dataset
 X, Y = load_planar_dataset()
 
 def layer_sizes(X, Y):
