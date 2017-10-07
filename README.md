@@ -26,7 +26,7 @@ Run:
     sudo -H pip3 install --upgrade pip   
     sudo pip3 install numpy h5py
     
-### Python2
+### Python2 Compatibility
 
 `/` works differently in Python3 vs Python2  
 __future__ seems to fix this:  
