@@ -1,16 +1,16 @@
 # Logistic Regression with a Neural Network mindset
 
-Image recognition algorithm that recognizes cats with 70% accuracy!
+cats.py - Image recognition algorithm that recognizes cats with 70% accuracy!
 
-Based on Neural Networks and Deep Learning (Week 2) by deeplearning.ai
-
-[Jupyter Notebook](https://github.com/EN10/cat-classifier/blob/master/Logistic%2BRegression%2Bwith%2Ba%2BNeural%2BNetwork%2Bmindset%2Bv4.ipynb)
+Based on Neural Networks and Deep Learning by deeplearning.ai
 
 ### Jupyter
 
+These notebooks have been made for Python3
+
 Install:
 
-    sudo pip install jupyter
+    sudo pip3 install jupyter
 
 Run:
 
@@ -19,7 +19,14 @@ Run:
 ### Prerequisites:
 
     sudo apt update
-    sudo apt install python-pip
+    sudo apt install python-pip3
     
-    pip install --upgrade pip
-    sudo pip install numpy h5py
+    sudo -H pip3 install --upgrade pip   
+    sudo pip3 install numpy h5py
+    
+### Python2
+
+`/` works differently in Python3 vs Python2  
+__future__ seems to fix this:  
+
+    from __future__ import division
