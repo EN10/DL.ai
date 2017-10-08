@@ -1,6 +1,7 @@
 from __future__ import division
 import numpy as np
 from dnn_app_utils_v2 import *
+#from testCases_v3 import *
 
 np.random.seed(1)
 
@@ -226,6 +227,7 @@ def L_layer_model(X, Y, layers_dims, learning_rate = 0.0075, num_iterations = 30
     return parameters
 
 if __name__ == '__main__':
+
     train_x_orig, train_y, test_x_orig, test_y, classes = load_data()
     
     # Reshape the training and test examples 
@@ -237,7 +239,7 @@ if __name__ == '__main__':
     test_x = test_x_flatten/255.
     
     ### CONSTANTS ###
-    layers_dims = [12288, 7, 1] #  5-layer model
+    layers_dims = [12288, 20, 7, 5, 1] #  5-layer model
     
     parameters = L_layer_model(train_x, train_y, layers_dims, num_iterations = 2500, print_cost = True)
     pred_train = predict(train_x, train_y, parameters)
