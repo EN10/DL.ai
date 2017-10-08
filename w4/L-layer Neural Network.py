@@ -1,7 +1,5 @@
 from __future__ import division
 import numpy as np
-#import h5py
-#from dnn_utils_v2 import sigmoid, sigmoid_backward, relu, relu_backward
 from dnn_app_utils_v2 import *
 
 np.random.seed(1)
