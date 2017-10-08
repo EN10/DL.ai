@@ -227,7 +227,6 @@ def L_layer_model(X, Y, layers_dims, learning_rate = 0.0075, num_iterations = 30
     return parameters
 
 if __name__ == '__main__':
-
     train_x_orig, train_y, test_x_orig, test_y, classes = load_data()
     
     # Reshape the training and test examples 
