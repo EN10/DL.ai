@@ -243,7 +243,7 @@ def L_model_forward(X, parameters):
     caches.append(cache)
     
     assert(AL.shape == (1,X.shape[1]))
-            
+    
     return AL, caches
 
 def compute_cost(AL, Y):
