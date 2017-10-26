@@ -16,6 +16,8 @@ test_set_x_flatten = test_set_x_orig.reshape(test_set_x_orig.shape[0], -1).T    
 train_set_x = train_set_x_flatten/255.  # 0-255 -> 0-1
 test_set_x = test_set_x_flatten/255.
 
+print train_set_y[0]
+
 def sigmoid(z):
 
     s = 1/(1+np.exp(-z))
