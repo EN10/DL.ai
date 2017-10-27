@@ -5,7 +5,8 @@ cats.py - Image recognition algorithm that recognizes cats with 70% accuracy!
 Single neuron of linear and sigmoid.
 
 **Planar data classification with a hidden layer**  
-flowers.py - neural network to correctly classify red and blue generated points that form a flower
+flowers.py - neural network to correctly classify red and blue generated points that form a flower  
+Testing different numbers of hidden units in a single hidden layer network.  
 
 **Deep Neural Network**  
 5-layer Neural Network.py - a deep neural network that classifies cat vs. non-cat images.
