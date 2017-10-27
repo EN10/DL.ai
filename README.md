@@ -3,6 +3,7 @@
 **Logistic Regression with a Neural Network**  
 cats.py - Image recognition algorithm that recognizes cats with 70% accuracy!  
 Single neuron of linear and sigmoid.
+prop: linear -> sigmoid  
 
 **Planar data classification with a hidden layer**  
 flowers.py - neural network to correctly classify red and blue generated points that form a flower  
