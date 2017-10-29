@@ -14,13 +14,13 @@ forward_prop: linear -> tanh -> linear -> sigmoid
 5-layer Neural Network.py - a deep neural network that classifies cat vs. non-cat images.  
 L_layer_model prop: [LINEAR->RELU]*(L-1)->LINEAR->SIGMOID 
 
-**w5**
-* Initialization [of weights]
-* Regularization (L2 & Dropout) [reduces overfitting]
-* Gradient Checking [verifies backprop]
+**w5**  
+Initialization [of weights]  
+Regularization (L2 & Dropout) [reduces overfitting]  
+Gradient Checking [verifies backprop]  
 
-**w6**
-* Mini-Batch and Adam
+**w6**  
+Mini-Batch and Adam
 
 ### Jupyter
 
