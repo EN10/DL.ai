@@ -1,26 +1,30 @@
 # Neural Networks and Deep Learning
 
-**Logistic Regression with a Neural Network**  
+**w1: Intro**
+
+**w2: Logistic Regression with a Neural Network**  
 cats.py - Image recognition algorithm that recognizes cats with 70% accuracy!  
 Single neuron of linear and sigmoid.
 prop: linear -> sigmoid  
 
-**Planar data classification with a hidden layer**  
+**w3: Planar data classification with a hidden layer**  
 flowers.py - neural network to correctly classify red and blue generated points that form a flower  
 Testing different numbers of hidden units in a single hidden layer network.  
 forward_prop: linear -> tanh -> linear -> sigmoid  
 
-**Deep Neural Network**  
+**w4: Deep Neural Network**  
 5-layer Neural Network.py - a deep neural network that classifies cat vs. non-cat images.  
 L_layer_model prop: [LINEAR->RELU]*(L-1)->LINEAR->SIGMOID 
 
-**w5**  
+**w5: I.R.G.**  
 Initialization [of weights]  
 Regularization (L2 & Dropout) [reduces overfitting]  
 Gradient Checking [verifies backprop]  
 
-**w6**  
+**w6 Optimization**  
 Mini-Batch and Adam
+
+**w7: Tensorflow**
 
 ### Jupyter
 
